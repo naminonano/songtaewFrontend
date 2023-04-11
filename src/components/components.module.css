@@ -1,0 +1,66 @@
+.line {
+  position: absolute;
+
+  width: 3px;
+  /* align-self: center; */
+  left: calc(50vw - 1.5px);
+}
+.available {
+  background-color: aquamarine;
+}
+.unavailable {
+  background-color: rgb(114, 114, 114);
+}
+
+.circle {
+  /* top : 100px; */
+  left: calc(50vw - 5px);
+  /* left:calc(50vw- 25px) ; */
+  /* background-color: aliceblue; */
+  /* border: solid black; */
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.currentCircle {
+  /* top : 100px; */
+  left: calc(50vw - 15px);
+  /* left:calc(50vw- 25px) ; */
+  background-color: aliceblue;
+  /* border: solid black; */
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.station {
+  /* top : 100px; */
+  left: calc(50vw + 30px);
+  /* left:calc(50vw- 25px) ; */
+  /* background-color: aliceblue; */
+  /* border: solid black; */
+  position: absolute;
+  /* width: 40px; */
+  /* height :40px ; */
+  /* 1border-radius: 50%; */
+}
+
+.blinking {
+  animation: opacity 2s ease-in-out infinite;
+  opacity: 1;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
